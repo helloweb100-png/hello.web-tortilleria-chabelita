@@ -137,7 +137,7 @@
     const cover = $('#mapCover');
     const wrap = $('#mapWrap');
     const places = {
-      matriz: '29.1152462,-110.9692183',
+      matriz: '29.11525,-110.969139',
       sucursal: '29.1233357,-110.9652854'
     };
     const place = (key) => {
