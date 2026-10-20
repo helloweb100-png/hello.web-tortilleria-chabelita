@@ -137,12 +137,12 @@
     const cover = $('#mapCover');
     const wrap = $('#mapWrap');
     const places = {
-      matriz: 'Calle Guadalupe Victoria y Avenida 6, Colonia Jesús García, Hermosillo, Sonora',
-      sucursal: 'Calle Reyes y Constituyentes, Colonia Ley 57, Hermosillo, Sonora'
+      matriz: '29.1152462,-110.9692183',
+      sucursal: '29.1233357,-110.9652854'
     };
     const place = (key) => {
       const q = encodeURIComponent(places[key]);
-      map.src = `https://www.google.com/maps?q=${q}&output=embed`;
+      map.src = `https://www.google.com/maps?q=${q}&z=17&output=embed`;
       dir.href = `https://www.google.com/maps/dir/?api=1&destination=${q}`;
     };
     const moveInd = () => {
