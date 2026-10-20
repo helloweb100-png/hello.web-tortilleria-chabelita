@@ -1,0 +1,706 @@
+﻿<!DOCTYPE html>
+<html lang="es-MX" class="is-loading">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- SEO base -->
+  <title>Tortillería Chabelita | Tortillas de harina caseras en Hermosillo, Sonora</title>
+  <meta name="description" content="Tortillas de harina 100% caseras, calientitas y suaves en Hermosillo, Sonora. Gorditas de requesón, mayoreo para burritos y envíos. Pide por WhatsApp.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0b0906">
+  <meta name="color-scheme" content="dark">
+  <meta name="author" content="Tortillería Chabelita">
+  <!-- TODO producción: agregar <link rel="canonical"> y og:url con el dominio final -->
+
+  <!-- Open Graph / Twitter (TODO producción: usar URL absoluta en og:image) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Tortillería Chabelita">
+  <meta property="og:title" content="Tortillería Chabelita | Tortillas que saben a hogar">
+  <meta property="og:description" content="Tortillas de harina 100% caseras, gorditas de requesón y precio de mayoreo para tu negocio. Dos sucursales en Hermosillo, Sonora.">
+  <meta property="og:image" content="img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo de Tortillería Chabelita junto a tortillas de harina recién hechas">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tortillería Chabelita | Tortillas que saben a hogar">
+  <meta name="twitter:description" content="Tortillas de harina 100% caseras en Hermosillo, Sonora. Pide por WhatsApp.">
+  <meta name="twitter:image" content="img/og-image.jpg">
+
+  <!-- Iconos -->
+  <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+
+  <!-- Rendimiento: fuentes propias y imagen del hero -->
+  <link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="img/logo-badge.webp" as="image" type="image/webp">
+  <link rel="preload" href="img/tortillas-de-harina-recien-hechas.webp" as="image" type="image/webp" fetchpriority="high">
+
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.documentElement.classList.add('has-js');
+    /* Seguro: si algo falla al cargar, la cortina de carga nunca bloquea el sitio */
+    setTimeout(function () {
+      var l = document.getElementById('loader');
+      if (l) l.style.display = 'none';
+      document.documentElement.classList.remove('is-loading');
+    }, 9000);
+  </script>
+  <noscript><style>.loader{display:none!important}html.is-loading{overflow:auto!important}</style></noscript>
+
+  <!-- Datos estructurados: negocio local (2 sucursales) + preguntas frecuentes -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FoodEstablishment",
+        "@id": "#matriz",
+        "name": "Tortillería Chabelita (Matriz)",
+        "description": "Tortillas de harina 100% caseras, gorditas de requesón y precio de mayoreo para negocios de burritos en Hermosillo, Sonora.",
+        "telephone": "+52 662 431 9232",
+        "servesCuisine": ["Mexicana", "Sonorense"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle Guadalupe Victoria y Av. 6, Col. Jesús García",
+          "addressLocality": "Hermosillo",
+          "addressRegion": "Sonora",
+          "addressCountry": "MX"
+        },
+        "areaServed": "Hermosillo, Sonora",
+        "sameAs": ["https://www.facebook.com/share/r/1JSHgwWfWU/"]
+      },
+      {
+        "@type": "FoodEstablishment",
+        "@id": "#sucursal-ley-57",
+        "name": "Tortillería Chabelita (Sucursal Ley 57)",
+        "telephone": "+52 662 431 9232",
+        "servesCuisine": ["Mexicana", "Sonorense"],
+        "parentOrganization": { "@id": "#matriz" },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle Reyes y Constituyentes, Col. Ley 57",
+          "addressLocality": "Hermosillo",
+          "addressRegion": "Sonora",
+          "addressCountry": "MX"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Las tortillas son caseras?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sí. Nuestras tortillas son 100% caseras y se hacen con receta tradicional, para que lleguen suaves, calientitas y con sabor a hogar." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Hacen envíos?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sí, pregunta por nuestros envíos por WhatsApp al 662 431 9232 y te decimos cómo llevarte tu pedido." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Tienen precio de mayoreo para burritos?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sí. Tenemos precios preferenciales para negocios y emprendedores que venden burritos. Pide informes por mensaje directo." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo hago mi pedido?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Por WhatsApp al 662 431 9232, con el formulario de esta página o pasando directo a cualquiera de nuestras dos sucursales en Hermosillo." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué son las gorditas de requesón?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Son gorditas tradicionales, suaves y calientitas, con ese toque casero inigualable. Quedan perfectas con queso derretido y salsa fresca." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Dónde están las sucursales?",
+            "acceptedAnswer": { "@type": "Answer", "text": "La matriz está en Calle Guadalupe Victoria y Av. 6, Col. Jesús García. La sucursal está en la esquina de Calle Reyes y Constituyentes, Col. Ley 57, en Hermosillo, Sonora." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <!-- =========================================================
+       CARGA: sello de la marca con anillo de progreso y cortina
+       ========================================================= -->
+  <div class="loader" id="loader" role="status" aria-live="polite" aria-label="Cargando Tortillería Chabelita">
+    <div class="loader__half loader__half--top"></div>
+    <div class="loader__half loader__half--bottom"></div>
+    <div class="loader__core">
+      <div class="loader__ring" id="loaderRing">
+        <span class="loader__orbit" aria-hidden="true"></span>
+        <img class="loader__badge" src="img/logo-badge.webp" width="220" height="220" alt="" decoding="async">
+      </div>
+      <p class="loader__percent"><span id="loaderNum">0</span><small>%</small></p>
+      <p class="loader__label" id="loaderLabel">Amasando la masa</p>
+    </div>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- =========================================================
+       CABECERA
+       ========================================================= -->
+  <header class="site-header" id="header">
+    <div class="site-header__bar wrap">
+      <a class="brand" href="#inicio" aria-label="Tortillería Chabelita, ir al inicio">
+        <img class="brand__mark" src="img/logo-badge.webp" width="44" height="44" alt="" decoding="async">
+        <span class="brand__name">Chabelita<small>Tortillería</small></span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#mayoreo">Mayoreo</a></li>
+          <li><a href="#ubicaciones">Ubicaciones</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="btn btn--primary btn--sm nav__cta" href="https://wa.me/526624319232?text=Hola%20Chabelita%2C%20quiero%20hacer%20un%20pedido%20de%20tortillas." target="_blank" rel="noopener" data-magnetic>
+          <i class="ph ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>Hacer mi pedido</span>
+        </a>
+        <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú móvil -->
+  <div class="menu" id="menu" inert>
+    <nav class="menu__nav" aria-label="Menú móvil">
+      <ul class="menu__list">
+        <li style="--i:0"><a class="menu__link" href="#productos">Productos</a></li>
+        <li style="--i:1"><a class="menu__link" href="#proceso">Proceso</a></li>
+        <li style="--i:2"><a class="menu__link" href="#mayoreo">Mayoreo</a></li>
+        <li style="--i:3"><a class="menu__link" href="#ubicaciones">Ubicaciones</a></li>
+        <li style="--i:4"><a class="menu__link" href="#preguntas">Preguntas</a></li>
+      </ul>
+      <div class="menu__foot" style="--i:5">
+        <a class="btn btn--primary btn--lg" href="https://wa.me/526624319232?text=Hola%20Chabelita%2C%20quiero%20hacer%20un%20pedido%20de%20tortillas." target="_blank" rel="noopener">
+          <i class="ph ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>Hacer mi pedido</span>
+        </a>
+        <p>662 431 9232<br>Hermosillo, Sonora</p>
+      </div>
+    </nav>
+  </div>
+
+  <main id="contenido">
+
+    <!-- =========================================================
+         1. HERO
+         ========================================================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+      <canvas class="hero__particles" id="heroParticles" aria-hidden="true"></canvas>
+
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Hechas a mano en Hermosillo</p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="line"><span class="line__in">Tortillas que</span></span>
+            <span class="line"><span class="line__in">saben a <em>hogar.</em></span></span>
+          </h1>
+          <p class="hero__lead">Tortillas de harina 100% caseras, calientitas y suaves, directo del comal. Para tu mesa o tu negocio en Hermosillo.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--lg" href="https://wa.me/526624319232?text=Hola%20Chabelita%2C%20quiero%20hacer%20un%20pedido%20de%20tortillas." target="_blank" rel="noopener" data-magnetic>
+              <i class="ph ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>Quiero mis tortillas</span>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#proceso">
+              <span>Ver cómo las hacemos</span><i class="ph ph-arrow-down" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__stage">
+            <div class="layer layer--ring" data-depth="0.6">
+              <div class="hero__ring" id="heroRing" data-text="Tortillería Chabelita + 100% caseras + Hermosillo, Sonora + " aria-hidden="true"></div>
+            </div>
+            <div class="layer layer--lg" data-depth="1">
+              <figure class="disc disc--lg">
+                <img src="img/tortillas-de-harina-recien-hechas.webp" width="1153" height="2048" alt="Tortillas de harina recién hechas con su dorado de comal, de Tortillería Chabelita en Hermosillo" fetchpriority="high" decoding="async">
+              </figure>
+            </div>
+            <div class="layer layer--sm" data-depth="1.8">
+              <figure class="disc disc--sm">
+                <img src="img/quesadilla-jamon-queso-pico-de-gallo.webp" width="768" height="1364" alt="Quesadilla de jamón y queso con pico de gallo hecha con tortilla de harina" decoding="async">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         2. DEL COMAL A TU MESA (video que se abre con el scroll)
+         ========================================================= -->
+    <section class="reveal" id="comal" aria-labelledby="reveal-title">
+      <div class="reveal__pin">
+        <div class="reveal__words" aria-hidden="true">
+          <span class="reveal__word reveal__word--l">Del comal</span>
+          <span class="reveal__word reveal__word--r">a tu mesa</span>
+        </div>
+
+        <div class="reveal__frame" id="revealFrame">
+          <video class="reveal__video" id="revealVideo" muted loop playsinline preload="metadata" poster="img/poster-comal.webp" disablepictureinpicture disableremoteplayback tabindex="-1" aria-label="Tortillas de harina cociéndose sobre el comal">
+            <source src="img/tortillas-en-el-comal.mp4" type="video/mp4">
+          </video>
+          <div class="reveal__shade"></div>
+        </div>
+
+        <div class="reveal__copy">
+          <h2 class="h2" id="reveal-title">Del comal a tu mesa, <em>calientitas.</em></h2>
+          <p class="lead">Cada tortilla se cuece al momento sobre el comal. Por eso llega suave, con su dorado y ese olor a casa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banda de palabras (única en la página) -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marqueeTrack">
+        <ul class="marquee__group">
+          <li class="marquee__item">Tortillas de harina<i class="ph ph-fill ph-asterisk-simple"></i></li>
+          <li class="marquee__item">Gorditas de requesón<i class="ph ph-fill ph-asterisk-simple"></i></li>
+          <li class="marquee__item">Quesadillas<i class="ph ph-fill ph-asterisk-simple"></i></li>
+          <li class="marquee__item">Burritos<i class="ph ph-fill ph-asterisk-simple"></i></li>
+          <li class="marquee__item">Tacos<i class="ph ph-fill ph-asterisk-simple"></i></li>
+          <li class="marquee__item">Carne asada<i class="ph ph-fill ph-asterisk-simple"></i></li>
+        </ul>
+        <ul class="marquee__group">
+          <li class="marquee__item">Tortillas de harina<i class="ph ph-fill ph-asterisk-simple"></i></li>
+          <li class="marquee__item">Gorditas de requesón<i class="ph ph-fill ph-asterisk-simple"></i></li>
+          <li class="marquee__item">Quesadillas<i class="ph ph-fill ph-asterisk-simple"></i></li>
+          <li class="marquee__item">Burritos<i class="ph ph-fill ph-asterisk-simple"></i></li>
+          <li class="marquee__item">Tacos<i class="ph ph-fill ph-asterisk-simple"></i></li>
+          <li class="marquee__item">Carne asada<i class="ph ph-fill ph-asterisk-simple"></i></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- =========================================================
+         3. PRODUCTOS (carrusel horizontal anclado al scroll)
+         ========================================================= -->
+    <section class="products" id="productos" aria-labelledby="products-title">
+      <div class="products__pin" id="productsPin">
+        <div class="products__track" id="productsTrack">
+
+          <div class="products__intro">
+            <h2 class="h2" id="products-title">Todo lo que sale <em>del comal.</em></h2>
+            <p class="lead">Tortillas de harina, gorditas de requesón y la base perfecta para tus quesadillas y burritos.</p>
+            <p class="products__hint"><i class="ph ph-arrow-right" aria-hidden="true"></i> Desliza para ver más</p>
+          </div>
+
+          <article class="product">
+            <figure class="product__media">
+              <img src="img/tortillas-de-harina-recien-hechas.webp" width="1153" height="2048" alt="Tortillas de harina caseras, suaves y con dorado de comal" loading="lazy" decoding="async">
+            </figure>
+            <div class="product__body">
+              <h3 class="product__title">Tortillas de harina</h3>
+              <p class="product__text">Suaves, calientitas y con su dorado de comal. Las de siempre, las que saben a hogar.</p>
+              <a class="link" href="https://wa.me/526624319232?text=Hola%20Chabelita%2C%20quiero%20tortillas%20de%20harina." target="_blank" rel="noopener">Las quiero calientitas <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="product">
+            <figure class="product__media">
+              <img src="img/gorditas-requeson-cafe-desayuno.webp" width="768" height="1364" alt="Tortillas y requesón junto a una taza de café para un desayuno casero" loading="lazy" decoding="async">
+            </figure>
+            <div class="product__body">
+              <h3 class="product__title">Gorditas de requesón</h3>
+              <p class="product__text">Tradicionales, suaves y con ese toque casero inigualable. Para el desayuno, la comida o la cena.</p>
+              <a class="link" href="https://wa.me/526624319232?text=Hola%20Chabelita%2C%20quiero%20gorditas%20de%20reques%C3%B3n." target="_blank" rel="noopener">Quiero mis gorditas <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="product">
+            <figure class="product__media">
+              <img src="img/quesadilla-jamon-queso-pico-de-gallo.webp" width="768" height="1364" alt="Quesadilla de jamón con queso derretido y pico de gallo sobre tortilla de harina" loading="lazy" decoding="async">
+            </figure>
+            <div class="product__body">
+              <h3 class="product__title">Para tus quesadillas</h3>
+              <p class="product__text">Con queso derretido y salsa fresca quedan perfectas. Suaves y calientitas, listas para doblar.</p>
+              <a class="link" href="https://wa.me/526624319232?text=Hola%20Chabelita%2C%20quiero%20tortillas%20para%20quesadillas." target="_blank" rel="noopener">Para mis quesadillas <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="product">
+            <figure class="product__media">
+              <img src="img/burritos-charola-mayoreo.webp" width="1080" height="1080" alt="Charola de burritos dorados con chiles verdes hechos con tortilla de harina" loading="lazy" decoding="async">
+            </figure>
+            <div class="product__body">
+              <h3 class="product__title">Para tus burritos</h3>
+              <p class="product__text">Resistentes para armar burritos sin que se rompan, con precio de mayoreo para tu negocio.</p>
+              <a class="link" href="https://wa.me/526624319232?text=Hola%20Chabelita%2C%20quiero%20tortillas%20para%20burritos." target="_blank" rel="noopener">Para mis burritos <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <div class="products__outro">
+            <h3 class="outro__title">¿Y todo lo que <em>se te antoje?</em></h3>
+            <p class="lead">Cuéntanos qué tienes en mente y lo platicamos por mensaje directo.</p>
+            <a class="btn btn--primary btn--lg" href="https://wa.me/526624319232?text=Hola%20Chabelita%2C%20quiero%20preguntar%20por%20otro%20antojo." target="_blank" rel="noopener" data-magnetic>
+              <i class="ph ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>Cuéntanos qué se te antoja</span>
+            </a>
+          </div>
+        </div>
+        <div class="products__bar" aria-hidden="true"><span id="productsBar"></span></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. PROCESO (tarjetas que se apilan)
+         ========================================================= -->
+    <section class="process" id="proceso" aria-labelledby="process-title">
+      <div class="wrap process__head">
+        <p class="eyebrow">Receta tradicional</p>
+        <h2 class="h2" id="process-title" data-split>Así nace <em>cada tortilla.</em></h2>
+        <p class="lead" data-reveal>Masa casera, manos con oficio y un comal bien caliente.</p>
+      </div>
+
+      <div class="stack" id="stack">
+        <article class="stack__card">
+          <div class="stack__face stack__face--dark">
+            <div class="stack__text">
+              <span class="stack__icon"><i class="ph ph-hand-heart" aria-hidden="true"></i></span>
+              <h3 class="stack__title">Amasamos y extendemos</h3>
+              <p>Masa casera con receta tradicional. Cada bolita se extiende hasta quedar delgada y pareja.</p>
+            </div>
+            <figure class="stack__media">
+              <img src="img/masa-tortillas-extendida.webp" width="1153" height="2048" alt="Masa de tortillas de harina extendida a mano sobre una charola" loading="lazy" decoding="async">
+            </figure>
+          </div>
+        </article>
+
+        <article class="stack__card">
+          <div class="stack__face stack__face--gold">
+            <div class="stack__text">
+              <span class="stack__icon"><i class="ph ph-fire" aria-hidden="true"></i></span>
+              <h3 class="stack__title">Cocemos al comal</h3>
+              <p>Al comal caliente hasta que se infla y se dora. De ahí viene ese sabor que se siente en casa.</p>
+            </div>
+            <figure class="stack__media">
+              <img src="img/tortillas-de-harina-recien-hechas.webp" width="1153" height="2048" alt="Tortillas de harina doradas en el comal con sus manchitas características" loading="lazy" decoding="async">
+            </figure>
+          </div>
+        </article>
+
+        <article class="stack__card">
+          <div class="stack__face stack__face--ink">
+            <div class="stack__text">
+              <span class="stack__icon"><i class="ph ph-coffee" aria-hidden="true"></i></span>
+              <h3 class="stack__title">Servimos calientitas</h3>
+              <p>Pasa por ellas a la tortillería o pregunta por tu envío. Llegan suaves y listas para tu mesa.</p>
+            </div>
+            <figure class="stack__media">
+              <img src="img/gorditas-requeson-cafe-desayuno.webp" width="768" height="1364" alt="Tortillas calientes con requesón y café en una mesa de madera" loading="lazy" decoding="async">
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. MAYOREO (bento)
+         ========================================================= -->
+    <section class="wholesale" id="mayoreo" aria-labelledby="wholesale-title">
+      <div class="wrap">
+        <div class="wholesale__head">
+          <h2 class="h2" id="wholesale-title" data-split>Tu negocio de burritos merece <em>mejor tortilla.</em></h2>
+          <p class="lead" data-reveal>Precio especial de mayoreo para negocios y emprendedores. Textura, suavidad y resistencia para que cada burrito salga perfecto.</p>
+        </div>
+
+        <div class="bento" id="bento">
+          <article class="cell cell--a cell--image" data-spot>
+            <img src="img/burritos-charola-mayoreo.webp" width="1080" height="1080" alt="Charola de burritos listos para vender, armados con tortillas de harina de Chabelita" loading="lazy" decoding="async">
+            <div class="cell__scrim"></div>
+            <div class="cell__content">
+              <h3 class="cell__title">Perfectas para armar burritos sin que se rompan.</h3>
+              <p>Para que consientas a tus clientes con el mejor sabor.</p>
+            </div>
+          </article>
+
+          <article class="cell cell--b" data-spot>
+            <div class="cell__content">
+              <h3 class="cell__title cell__title--xl">Precio de mayoreo</h3>
+              <p>Precios preferenciales para negocios y emprendedores.</p>
+              <a class="btn btn--dark btn--lg" href="https://wa.me/526624319232?text=Hola%20Chabelita%2C%20quiero%20informes%20del%20precio%20de%20mayoreo%20para%20mi%20negocio." target="_blank" rel="noopener" data-magnetic>
+                <span>Quiero precio de mayoreo</span><i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="cell cell--c" data-spot>
+            <div class="cell__content">
+              <i class="ph ph-seal-check cell__icon" aria-hidden="true"></i>
+              <h3 class="cell__title">Calidad tradicional que se nota en cada mordida.</h3>
+            </div>
+          </article>
+
+          <article class="cell cell--d cell--image" data-spot>
+            <img src="img/quesadilla-jamon-queso-pico-de-gallo.webp" width="768" height="1364" alt="Tortilla de harina suave y dorada doblada con jamón, queso y pico de gallo" loading="lazy" decoding="async">
+            <div class="cell__scrim"></div>
+            <div class="cell__content">
+              <p class="cell__caption">Suaves, calientitas y con su dorado.</p>
+            </div>
+          </article>
+
+          <article class="cell cell--e" data-spot>
+            <div class="cell__content cell__content--row">
+              <span class="cell__badge"><i class="ph ph-fill ph-truck" aria-hidden="true"></i></span>
+              <div>
+                <h3 class="cell__title">Pregunta por nuestros envíos.</h3>
+                <p>Cuéntanos dónde estás y vemos cómo llevarte tu pedido.</p>
+                <a class="link" href="https://wa.me/526624319232?text=Hola%20Chabelita%2C%20quiero%20informes%20sobre%20sus%20env%C3%ADos." target="_blank" rel="noopener">Pregunta por tu envío <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. PERFECTAS PARA (tipografía que se llena con el scroll)
+         ========================================================= -->
+    <section class="uses" id="antojos" aria-labelledby="uses-title">
+      <div class="wrap">
+        <h2 class="uses__title" id="uses-title">Perfectas para</h2>
+        <ul class="uses__list">
+          <li class="use"><span class="use__word"><span class="use__base">Tacos</span><span class="use__fill" aria-hidden="true">Tacos</span></span></li>
+          <li class="use"><span class="use__word"><span class="use__base">Quesadillas</span><span class="use__fill" aria-hidden="true">Quesadillas</span></span></li>
+          <li class="use"><span class="use__word"><span class="use__base">Carne asada</span><span class="use__fill" aria-hidden="true">Carne asada</span></span></li>
+          <li class="use"><span class="use__word"><span class="use__base">Burritos</span><span class="use__fill" aria-hidden="true">Burritos</span></span></li>
+          <li class="use use--note"><span class="use__word"><span class="use__base">¡Y todo lo que se te antoje!</span><span class="use__fill" aria-hidden="true">¡Y todo lo que se te antoje!</span></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. UBICACIONES
+         ========================================================= -->
+    <section class="places" id="ubicaciones" aria-labelledby="places-title">
+      <div class="wrap places__grid">
+        <div class="places__info">
+          <p class="eyebrow">Dónde estamos</p>
+          <h2 class="h2" id="places-title" data-split>Pasa por <em>tus tortillas.</em></h2>
+
+          <div class="tabs" role="tablist" aria-label="Sucursales">
+            <span class="tabs__ind" id="tabsInd" aria-hidden="true"></span>
+            <button class="tabs__tab" role="tab" id="tab-matriz" type="button" aria-selected="true" aria-controls="panel-matriz" data-place="matriz">Matriz</button>
+            <button class="tabs__tab" role="tab" id="tab-sucursal" type="button" aria-selected="false" aria-controls="panel-sucursal" tabindex="-1" data-place="sucursal">Sucursal Ley 57</button>
+          </div>
+
+          <div class="places__panels">
+            <address class="panel" role="tabpanel" id="panel-matriz" aria-labelledby="tab-matriz">
+              <i class="ph ph-fill ph-storefront" aria-hidden="true"></i>
+              <div>
+                <h3>Matriz</h3>
+                <p>Calle Guadalupe Victoria y Av. 6, Col. Jesús García, Hermosillo, Sonora.</p>
+              </div>
+            </address>
+            <address class="panel" role="tabpanel" id="panel-sucursal" aria-labelledby="tab-sucursal" hidden>
+              <i class="ph ph-fill ph-map-pin" aria-hidden="true"></i>
+              <div>
+                <h3>Sucursal Ley 57</h3>
+                <p>Esquina de Calle Reyes y Constituyentes, Col. Ley 57, Hermosillo, Sonora.</p>
+              </div>
+            </address>
+          </div>
+
+          <a class="btn btn--primary btn--lg" id="directions" href="https://www.google.com/maps/dir/?api=1&destination=Calle%20Guadalupe%20Victoria%20y%20Avenida%206%2C%20Colonia%20Jes%C3%BAs%20Garc%C3%ADa%2C%20Hermosillo%2C%20Sonora" target="_blank" rel="noopener" data-magnetic>
+            <i class="ph ph-navigation-arrow" aria-hidden="true"></i><span>Llévame a la tortillería</span>
+          </a>
+
+          <dl class="stats">
+            <div class="stat">
+              <dt>sucursales en Hermosillo</dt>
+              <dd><span data-count="2">2</span></dd>
+            </div>
+            <div class="stat">
+              <dt>caseras, todas</dt>
+              <dd><span data-count="100">100</span>%</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="places__map" id="mapWrap" data-lenis-prevent>
+          <iframe id="mapFrame" title="Mapa de Tortillería Chabelita en Hermosillo, Sonora" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Calle%20Guadalupe%20Victoria%20y%20Avenida%206%2C%20Colonia%20Jes%C3%BAs%20Garc%C3%ADa%2C%20Hermosillo%2C%20Sonora&amp;output=embed"></iframe>
+          <button class="map-cover" id="mapCover" type="button">Toca para mover el mapa</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         8. PREGUNTAS FRECUENTES
+         ========================================================= -->
+    <section class="faq" id="preguntas" aria-labelledby="faq-title">
+      <div class="wrap faq__wrap">
+        <h2 class="h2" id="faq-title" data-split>Lo que más nos <em>preguntan.</em></h2>
+
+        <div class="faq__list" id="faqList">
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" id="faq-q1" aria-expanded="false" aria-controls="faq-a1"><span>¿Las tortillas son caseras?</span><i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__a" id="faq-a1" role="region" aria-labelledby="faq-q1"><div><p>Sí. Nuestras tortillas son 100% caseras y se hacen con receta tradicional, para que lleguen suaves, calientitas y con sabor a hogar.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" id="faq-q2" aria-expanded="false" aria-controls="faq-a2"><span>¿Hacen envíos?</span><i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__a" id="faq-a2" role="region" aria-labelledby="faq-q2"><div><p>Sí, pregunta por nuestros envíos por WhatsApp al 662 431 9232 y te decimos cómo llevarte tu pedido.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" id="faq-q3" aria-expanded="false" aria-controls="faq-a3"><span>¿Tienen precio de mayoreo para burritos?</span><i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__a" id="faq-a3" role="region" aria-labelledby="faq-q3"><div><p>Sí. Tenemos precios preferenciales para negocios y emprendedores que venden burritos. Pide informes por mensaje directo.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" id="faq-q4" aria-expanded="false" aria-controls="faq-a4"><span>¿Cómo hago mi pedido?</span><i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__a" id="faq-a4" role="region" aria-labelledby="faq-q4"><div><p>Por WhatsApp al 662 431 9232, con el formulario de esta página o pasando directo a cualquiera de nuestras dos sucursales en Hermosillo.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" id="faq-q5" aria-expanded="false" aria-controls="faq-a5"><span>¿Qué son las gorditas de requesón?</span><i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__a" id="faq-a5" role="region" aria-labelledby="faq-q5"><div><p>Son gorditas tradicionales, suaves y calientitas, con ese toque casero inigualable. Quedan perfectas con queso derretido y salsa fresca.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" id="faq-q6" aria-expanded="false" aria-controls="faq-a6"><span>¿Dónde están las sucursales?</span><i class="ph ph-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__a" id="faq-a6" role="region" aria-labelledby="faq-q6"><div><p>La matriz está en Calle Guadalupe Victoria y Av. 6, Col. Jesús García. La sucursal está en la esquina de Calle Reyes y Constituyentes, Col. Ley 57, en Hermosillo, Sonora.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         9. CONTACTO / PEDIDO (formulario que abre WhatsApp)
+         ========================================================= -->
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="wrap contact__inner">
+        <h2 class="contact__title" id="contact-title" data-split>Haz tu pedido <em>hoy.</em></h2>
+        <p class="lead contact__lead" data-reveal>Cuéntanos qué necesitas y seguimos la conversación por WhatsApp. Pide informes por mensaje directo.</p>
+        <a class="contact__phone" href="https://wa.me/526624319232?text=Hola%20Chabelita%2C%20quiero%20hacer%20un%20pedido%20de%20tortillas." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al 662 431 9232">
+          <i class="ph ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>662 431 9232</span>
+        </a>
+
+        <form class="form" id="orderForm" novalidate>
+          <div class="form__grid">
+            <div class="field">
+              <label for="f-name">Tu nombre</label>
+              <input id="f-name" name="nombre" type="text" autocomplete="name" placeholder="Ej. Isabel Ramírez" required aria-describedby="f-name-err">
+              <p class="field__err" id="f-name-err" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-prod">¿Qué se te antoja?</label>
+              <div class="select">
+                <select id="f-prod" name="producto">
+                  <option>Tortillas de harina</option>
+                  <option>Gorditas de requesón</option>
+                  <option>Tortillas para quesadillas</option>
+                  <option>Tortillas para burritos (mayoreo)</option>
+                  <option>Otro antojo</option>
+                </select>
+                <i class="ph ph-caret-down" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <fieldset class="field">
+              <legend>¿Para quién son?</legend>
+              <div class="chips">
+                <input type="radio" id="who-casa" name="para" value="Mi casa" checked><label for="who-casa">Mi casa</label>
+                <input type="radio" id="who-negocio" name="para" value="Mi negocio"><label for="who-negocio">Mi negocio</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="field">
+              <legend>¿Cómo las recibes?</legend>
+              <div class="chips">
+                <input type="radio" id="del-pasar" name="entrega" value="Paso por ellas" checked><label for="del-pasar">Paso por ellas</label>
+                <input type="radio" id="del-envio" name="entrega" value="Quiero envío"><label for="del-envio">Quiero envío</label>
+              </div>
+            </fieldset>
+
+            <div class="field field--full">
+              <label for="f-qty">Cantidad o detalles</label>
+              <textarea id="f-qty" name="detalles" rows="3" placeholder="Ej. 5 kilos para el sábado"></textarea>
+            </div>
+          </div>
+
+          <button class="btn btn--primary btn--lg form__submit" id="formSubmit" type="submit" data-magnetic>
+            <span>Estoy listo, quiero mi pedido</span><i class="ph ph-paper-plane-tilt" aria-hidden="true"></i>
+          </button>
+          <p class="form__note" id="formStatus" role="status" aria-live="polite">Se abrirá WhatsApp con tu pedido listo para enviar.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       PIE
+       ========================================================= -->
+  <footer class="footer">
+    <div class="wrap footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="#inicio" aria-label="Tortillería Chabelita, volver arriba">
+          <img class="brand__mark" src="img/logo-badge.webp" width="44" height="44" alt="" loading="lazy" decoding="async">
+          <span class="brand__name">Chabelita<small>Tortillería</small></span>
+        </a>
+        <p>Donde cada tortilla sabe a hogar. Tortillas de harina 100% caseras en Hermosillo, Sonora.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Pie de página">
+        <h3>Explora</h3>
+        <ul>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#mayoreo">Mayoreo</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h3>Sucursales</h3>
+        <ul>
+          <li><strong>Matriz</strong><br>Calle Guadalupe Victoria y Av. 6, Col. Jesús García</li>
+          <li><strong>Sucursal</strong><br>Calle Reyes y Constituyentes, Col. Ley 57</li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Pedidos</h3>
+        <ul>
+          <li><a href="https://wa.me/526624319232?text=Hola%20Chabelita%2C%20quiero%20hacer%20un%20pedido%20de%20tortillas." target="_blank" rel="noopener">WhatsApp 662 431 9232</a></li>
+          <li><a href="https://www.facebook.com/share/r/1JSHgwWfWU/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__giant" aria-hidden="true">Chabelita</p>
+
+    <div class="wrap footer__bottom">
+      <p>&copy; <span id="year">2026</span> Tortillería Chabelita. Hermosillo, Sonora.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a class="wa-float" id="waFloat" href="https://wa.me/526624319232?text=Hola%20Chabelita%2C%20quiero%20hacer%20un%20pedido%20de%20tortillas." target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+    <i class="ph ph-fill ph-whatsapp-logo" aria-hidden="true"></i>
+    <span class="wa-float__label">Pedir por WhatsApp</span>
+  </a>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
